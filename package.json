@@ -1,0 +1,12 @@
+{
+	"name": "poc-improve-durableobject",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"deploy": "export WORKER_DEV='' && wrangler deploy",
+		"dev": "export WORKER_DEV=1 && wrangler dev"
+	},
+	"devDependencies": {
+		"wrangler": "^3.50"
+	}
+}

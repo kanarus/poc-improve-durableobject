@@ -1,0 +1,20 @@
+[package]
+name          = "poc-improve-durableobject"
+version       = "0.1.0"
+edition       = "2021"
+authors       = ["kanarus <kanarus786@gmail.com>"]
+documentation = "https://docs.rs/poc-improve-durableobject"
+homepage      = "https://crates.io/crates/poc-improve-durableobject"
+repository    = "https://github.com/kana-rus/poc-improve-durableobject"
+readme        = "README.md"
+license       = "MIT"
+description   = ""
+keywords      = []
+categories    = []
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+worker = { path = "../workers-rs/worker" }
+async-trait = "0.1"

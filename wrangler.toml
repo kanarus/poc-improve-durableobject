@@ -1,0 +1,17 @@
+name = "poc-improve-durableobject"
+main = "build/worker/shim.mjs"
+compatibility_date = "2024-05-09"
+
+# `worker-build` is required (run `cargo install worker-build` to install)
+
+[build]
+command = "test $WORKER_DEV && worker-build --dev || worker-build"
+
+[durable_objects]
+bindings = [
+    { name = "POC", class_name = "POC" }
+]
+
+[[migrations]]
+tag = "v1"
+new_classes = ["POC"]
